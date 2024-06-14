@@ -1,0 +1,108 @@
+body{
+    background : linear-gradient(to right,rgb(23, 45, 67),rgb(5, 29, 53));
+    font-family: sans-serif;
+}
+.banner{
+    border: 2px solid rgba(256,256,256,0.3);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 10px;
+    height: 90px;
+    align-items: center;
+}
+.game-name{
+    color: white; 
+    font-size: 20px;
+    width: 100px;
+    font-weight: 700;
+}
+.winner-name{
+    color: white;
+    font-size: 24px;
+}
+.score-board{
+    width: max-content;
+    height: 80px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.5vw 1vw;
+}
+.score-board > div{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.score-title{
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(39, 99, 189);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.user-point,.computer-point{
+    color: rgb(17, 34, 58);
+    font-size: 46px;
+    font-weight: 600;
+}
+.choices-title{
+    padding-left: 2vw;
+    font-size: 22px;
+    display: none;
+    color: white;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10vw;
+}
+.options{
+    margin-top: 40px;
+    row-gap: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row1{
+    display: flex;
+    column-gap: 10vw;
+}
+#rock,#paper,#scissor{
+    width: 120px;
+    height: 120px;
+    border: 20px solid rgb(74, 255, 219);
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.scissor{
+    display: flex;
+}
+#rock img,#paper img,#scissor img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.buttons{
+    margin-top: 4vw;
+    text-align: center;
+}
+.reset-btn,.play-again-btn{
+    border: none;
+    color: white;
+    background-color: aqua;
+    width: max-content;
+    height: max-content;
+    border-radius: 20px;
+    padding: 1vw 4vw;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 18px;
+}
